@@ -149,13 +149,11 @@ interface IERC1155 /* is ERC165 */ {
 interface IERC1155TokenReceiver {
     /**
         @notice Handle the receipt of a single ERC1155 token type
-        @dev The smart contract calls this function on the recipient
         after a `safeTransferFrom`. This function MAY throw to revert and reject the
         transfer. Return of other than the magic value MUST result in the
         transaction being reverted
         Note: the contract address is always the message sender
         @param _operator  The address which called `safeTransferFrom` function
-        @param _from      The address which previously owned the token
         @param _id        An array containing the ids of the token being transferred
         @param _value     An array containing the amount of tokens being transferred
         @param _data      Additional data with no specified format
